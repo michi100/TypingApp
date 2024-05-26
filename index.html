@@ -191,12 +191,12 @@
       }
       .question {
         display: flex;
-        font-size: 7vw;
+        font-size: 5vw;
         font-weight: bold;
         letter-spacing: 0.25em;
         text-align: center;
       }
-      .remained_num {
+      .remainednum {
         display: flex;
         font-size: 4vw;
         font-weight: bold;
@@ -241,7 +241,7 @@
   <body>
     <div id="game" class="text-container">
       <label for="inputText">
-        <div class="remained_num">
+        <div class="remainednum">
           <span id="remained_num"></span>
         </div>
         <div class="question">
@@ -293,7 +293,7 @@
 
         enteredTextwords = [];
         remainedTextwords = currentText.split("");
-        remained_num.textContent = "残り" + questions.length + "問！";
+        remained_num.textContent = "残り" + (questions.length + 1) + "問！";
       };
 
       setQuestion();
